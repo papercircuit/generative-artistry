@@ -60,12 +60,12 @@ code {
   align-items: center;
 }
 
-.main-option:first-child {
+.main-option:nth-child(odd){
   background: black;
   color: white;
 }
 
-.main-option:first-child a {
+.main-option:nth-child(odd) a {
   color: white;
 }
 
@@ -76,14 +76,15 @@ code {
   max-width: 300px;
 }
 
-.get-started {
+button {
   display: inline-block;
   margin-top: 5px;
 }
 
-.main-option:nth-child(2) .get-started {
+.main-option:nth-child(odd) {
   color: black;
 }
+
 
 /**
  * Episodes
@@ -162,7 +163,7 @@ article:nth-child(even) {
 }
 
 /*Footer if there is an even number of posts*/
-article:nth-child(odd) + footer {
+article:nth-child(even) + footer {
   background: #fafafa;
 }
 
@@ -213,7 +214,7 @@ article:nth-child(odd) + footer {
 }
 
 .article-links a,
-.get-started {
+button {
   color: white;
   text-decoration: none;
   border: 2px solid;
@@ -420,6 +421,7 @@ details .content {
   max-width: 100%;
   max-height: 200px;
 }
+
 
 @media only screen and (max-width: 900px) {
   article {
